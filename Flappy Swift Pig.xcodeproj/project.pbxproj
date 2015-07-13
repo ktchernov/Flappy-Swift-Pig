@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A751CCC51B53C35F0041F907 /* pig.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A751CCC41B53C35F0041F907 /* pig.mp3 */; };
 		A7F0497F1B524CC500D9FF85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0497E1B524CC500D9FF85 /* AppDelegate.swift */; };
 		A7F049811B524CC500D9FF85 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A7F049801B524CC500D9FF85 /* GameScene.sks */; };
 		A7F049831B524CC500D9FF85 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F049821B524CC500D9FF85 /* GameScene.swift */; };
 		A7F049851B524CC500D9FF85 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F049841B524CC500D9FF85 /* GameViewController.swift */; };
 		A7F049881B524CC500D9FF85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F049861B524CC500D9FF85 /* Main.storyboard */; };
 		A7F0498A1B524CC500D9FF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F049891B524CC500D9FF85 /* Assets.xcassets */; };
-		A7F0498D1B524CC500D9FF85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F0498B1B524CC500D9FF85 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A751CCC41B53C35F0041F907 /* pig.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pig.mp3; sourceTree = "<group>"; };
 		A7F0497B1B524CC500D9FF85 /* Flappy Swift Pig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flappy Swift Pig.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F0497E1B524CC500D9FF85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7F049801B524CC500D9FF85 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -24,7 +25,6 @@
 		A7F049841B524CC500D9FF85 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A7F049871B524CC500D9FF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7F049891B524CC500D9FF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A7F0498C1B524CC500D9FF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7F0498E1B524CC500D9FF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A751CCC31B53C34A0041F907 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A751CCC41B53C35F0041F907 /* pig.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		A7F049721B524CC500D9FF85 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +66,13 @@
 		A7F0497D1B524CC500D9FF85 /* Flappy Swift Pig */ = {
 			isa = PBXGroup;
 			children = (
+				A751CCC31B53C34A0041F907 /* Sounds */,
 				A7F0497E1B524CC500D9FF85 /* AppDelegate.swift */,
 				A7F049801B524CC500D9FF85 /* GameScene.sks */,
 				A7F049821B524CC500D9FF85 /* GameScene.swift */,
 				A7F049841B524CC500D9FF85 /* GameViewController.swift */,
 				A7F049861B524CC500D9FF85 /* Main.storyboard */,
 				A7F049891B524CC500D9FF85 /* Assets.xcassets */,
-				A7F0498B1B524CC500D9FF85 /* LaunchScreen.storyboard */,
 				A7F0498E1B524CC500D9FF85 /* Info.plist */,
 			);
 			path = "Flappy Swift Pig";
@@ -129,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7F049811B524CC500D9FF85 /* GameScene.sks in Resources */,
-				A7F0498D1B524CC500D9FF85 /* LaunchScreen.storyboard in Resources */,
+				A751CCC51B53C35F0041F907 /* pig.mp3 in Resources */,
 				A7F0498A1B524CC500D9FF85 /* Assets.xcassets in Resources */,
 				A7F049881B524CC500D9FF85 /* Main.storyboard in Resources */,
 			);
@@ -157,14 +165,6 @@
 				A7F049871B524CC500D9FF85 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A7F0498B1B524CC500D9FF85 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7F0498C1B524CC500D9FF85 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -255,6 +255,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Flappy Swift Pig/Info.plist";
@@ -270,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Flappy Swift Pig/Info.plist";
@@ -300,6 +302,7 @@
 				A7F049931B524CC500D9FF85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

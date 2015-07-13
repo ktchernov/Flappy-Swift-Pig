@@ -95,11 +95,25 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func didBeginContact(contact: SKPhysicsContact) {
         if (!gameOver) {
+            pig.runAction(
+                SKAction.playSoundFileNamed("pig.mp3", waitForCompletion: false))
             gameOver = true
             pig.physicsBody!.collisionBitMask = 0
+            pig.physicsBody!.applyAngularImpulse(0.1)
             pig.physicsBody!.velocity = CGVectorMake(0, -20)
+            
+            delay(1.5, completion: { self.view?.paused = true })
 
             removeAllActions()
         }
+    }
+    
+    func delay(seconds:Double, completion:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(seconds * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), completion)
     }
 }
